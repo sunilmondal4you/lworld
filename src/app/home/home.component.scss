@@ -1,0 +1,68 @@
+.h-100{height: 100%;}
+.luau-ttle {font-family:avenir_next_r;font-size: 105px;color: #000;}
+.dscnt-txt {font-size: 55px;color: #000;margin: 30px 0 50px;}
+.right-pannel {background-color: #000000;color: #ff6f5b;}
+.ever-dy-txt {font-size: 55px;margin: 30px 0 50px;}
+.version-txt {font-family:inconsolata_r;font-size: 70px;font-weight: bold;letter-spacing: -0.411429px;line-height: 162.7%;color: #000000;text-shadow: -1px -1px 0 #ff6f5b, 1px -1px 0 #ff6f5b, -1px 1px 0 #fd6e5a, 1px 1px 0 #ff6f5b;}
+.font-atomicage{font-family:atomic_age;font-style: normal;font-weight: normal;line-height: 162.7%;letter-spacing: -0.411429px}
+.app-download-html,.app-download-html body,.app-download-container,.app-download-container>.row,.app-download-container>.row>.col-xs-6 {height: 100%;}
+.left-pannel,.right-pannel{display: flex;padding: 51px}
+.left-pannel, .right-pannel {display: flex;height: 100%;align-items: center;}
+.left-pannel {justify-content: flex-end;}
+.left-pannel-wrpr{text-align: right;}
+.istore-img{width: 202px;}
+.logo-img{width: 160px;}
+.text-img{width:311px;margin-bottom: 40px;}
+.version-img{width: 285px;margin-bottom: 0px;}
+.pl-0{padding-left: 0px}
+.pr-0{padding-right: 0px}
+@media (max-width: 767px){
+  .dscnt-txt,.ever-dy-txt {margin: 19px 0 21px;}
+  .luau-ttle {font-family:avenir_next_r;font-size: 70px;}
+  .dscnt-txt,.ever-dy-txt,.version-txt{font-size: 40px;}
+  .text-img {width: 125px;height: auto;margin-bottom: 6px}
+  .dscnt-txt, .ever-dy-txt, .version-txt {font-size: 20px;}
+  .version-txt {height: 50px;margin-top: 40px;}
+  .left-pannel {padding: 0 15px 0 0;}
+  .right-pannel{padding: 0 0 0 15px;}
+  .istore-img {width: 137px;}
+  .text-img {width: 125px;margin-bottom: 20px;}
+  .logo-img {width: 80px;}
+}
+
+@media (max-width: 359px){
+  .dscnt-txt, .ever-dy-txt, .version-txt {font-size: 18px;}
+}
+
+
+pre {
+  outline: 1px solid #ccc;
+  margin: 5px;
+  padding: 5% 15% 2%;
+  border-radius: 4px;
+  min-height: 70vh;
+  height: 70vh;
+  overflow: auto;
+}
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+.json-view-sec{
+  height: 100vh;
+  width: 100vw;
+}
+.make-center{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.right-bottom{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  cursor: pointer;
+  color: #000;
+}

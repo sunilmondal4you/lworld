@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: 'avenir_next_b';
+  src: url('./assets/fonts/AvenirNextBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'avenir_next_db';
+  src: url('./assets/fonts/AvenirNextDemiBold.otf');
+  font-weight: DemiBold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'avenir_next_m';
+  src: url('./assets/fonts/AvenirNextMedium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'avenir_next_r';
+  src: url('./assets/fonts/AvenirNextRegular.otf');
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'atomic_age';
+  src: url('./assets/fonts/atomicage-regular.ttf');
+}
+@font-face {
+  font-family: 'inconsolata_r';
+  src: url('./assets/fonts/Inconsolata.otf');
+  font-weight: regular;
+  font-style: normal;
+}
+html, body {
+  font-family: 'avenir_next_b', 'avenir_next_db', 'avenir_next_m', 'avenir_next_r','atomic_age','inconsolata_r';
+}
+body{
+  height: 100vh;
+}

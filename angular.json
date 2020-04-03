@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "luau-world"
+    }
+  },
+  "defaultProject": "luau-world",
+  "cli": {
+    "analytics": "a0c5dcd9-2989-41a6-93d8-51cf16ab910d"
+  }
 }

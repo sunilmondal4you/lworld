@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,23 +9,23 @@ import { Router } from '@angular/router';
 export class ObjectViewComponent implements OnInit {
 
   jsonObj = {
-    "essentials package":{
-        "Customer service" : "link",
-        "Download app" : "link",
-        "terms of use" : "link",
-        "privacy policy" : "https://luauet.com/privacy",
+    "essentials_package":{
+        "customer_service" : "link",
+        "download_app" : "link",
+        "terms_of_use" : "link",
+        "privacy_policy" : "https://luauet.com/privacy",
         "Manifesto" : "link",
     },
-    "exploration package":{
-        "TikTok" : "link",
-        "Twitter" : "link",
-        "Email" : "im@luau.world",
+    "exploration_package":{
+        "tiktok" : "link",
+        "twitter" : "link",
+        "email" : "im@luau.world",
         "kickstarter" : "link",
     },
-    "opportunity package":{
-        "Design website" : "inquire",
-        "Nutritionists" : 100,
-        "Social media manager" : false,
+    "opportunity_package":{
+        "design_website" : "inquire",
+        "nutritionists" : 100,
+        "social_media_manager" : false,
     },
   };
 
@@ -38,6 +38,18 @@ export class ObjectViewComponent implements OnInit {
 
   routToHome(){
     this.router.navigate(['/home']);
+  }
+
+  @HostListener('click', ['$event'])
+  onClick (event : any) : void {
+    let tempData = event.toElement.innerText;
+    if(tempData){
+      let regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+
+      let validLink = regexp.test(tempData);
+      tempData = tempData.replace(/["']/g, "");
+      if(validLink) window.open(tempData, '_blank');
+    }
   }
 
 }

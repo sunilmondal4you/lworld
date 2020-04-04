@@ -22,8 +22,16 @@
   font-family: avenir_next_r !important;
 }
 
+::ng-deep .segment-key{
+  color: #2A292B !important;
+}
+
+::ng-deep .segment-value{
+  color: #534A2C !important;
+}
+
 $type-colors: (
-  string: #0bff00,
+  string: #534A2C,
   number: #009688,
   boolean: #b938a4,
   date: #05668D,
